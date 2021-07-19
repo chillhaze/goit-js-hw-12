@@ -25,18 +25,18 @@ body {
   color: #212121;
   line-height: 1.5;
 
-  margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 
-.country-info {
+.country-card {
   font-weight: 500;
 }
 
@@ -45,14 +45,14 @@ body {
   align-items: center;
 }
 
+.country_title h1 {
+  font-weight: bold;
+}
+
 .img-flag {
   height: 15px;
   width: 25px;
   margin-right: 10px;
-}
-
-.country_title h1 {
-  font-weight: bold;
 }
 
 .country_sub-title {
