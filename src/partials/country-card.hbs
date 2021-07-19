@@ -1,7 +1,18 @@
-<div>
-  <img src='{{flag}}' alt='{{name}}' />
-  <p>Country: {{name}}</p>
-  <p>Capital: {{capital}}</p>
-  <p>Population: {{population}}</p>
-  <p>Languages: {{#each language}}{{language.name}}{{/each}}</p>
+<div class='country_wrapper'>
+  <div class='country_title'>
+    <img class='img-flag' src='{{flag}}' alt='{{name}}' />
+    <h1>{{name}}</h1>
+  </div>
+  <p>
+    <span class='country_sub-title'>Capital: </span>
+    {{capital}}
+  </p>
+  <p>
+    <span class='country_sub-title'>Population: </span>
+    {{population}}
+  </p>
+  <p>
+    <span class='country_sub-title'>Languages: </span>
+    {{#each languages}}{{name}}{{#unless @last}}, {{/unless}}{{/each}}
+  </p>
 </div>
