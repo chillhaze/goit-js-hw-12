@@ -9,6 +9,8 @@ const DEBOUNCE_DELAY = 300;
 
 refs.searchForm.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
+// Notiflix.Notify.init({ position: 'right-top' });
+
 function onSearch() {
   let inputValue = refs.searchForm.value;
   if (inputValue !== '') {
