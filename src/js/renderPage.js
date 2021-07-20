@@ -12,7 +12,8 @@ refs.searchForm.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 // Notiflix.Notify.init({ position: 'right-top' });
 
 function onSearch() {
-  let inputValue = refs.searchForm.value;
+  let inputValue = refs.searchForm.value.trim();
+  console.log(inputValue);
   if (inputValue !== '') {
     API.fetchCountries(inputValue)
       .then(countriesArr => {
